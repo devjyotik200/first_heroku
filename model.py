@@ -26,8 +26,8 @@ x_train, x_test, y_train,y_test=train_test_split(x,y,test_size=0.10,random_state
 
 
 
-from sklearn.linear_model import LinearRegression
-classifier = LinearRegression()
+from sklearn.tree DecisionTreeClassifier
+classifier =DecisionTreeClassifier(max_depth=10,random_state=101,max_features=None,min_samples_leaf=15)
 classifier.fit(x_train,y_train)
 
 pickle.dump(classifier, open('model.pkl','wb'))
